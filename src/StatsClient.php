@@ -3,10 +3,10 @@
 namespace SbergradStats;
 
 /**
- * Class Client
+ * Class StatsClient
  * @package SbergradStats
  */
-class Client
+class StatsClient
 {
     /** @var string  */
     private $host = 'http://localhost:5001/';
