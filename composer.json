@@ -1,0 +1,19 @@
+{
+  "name": "sbergrad/stats-client",
+  "description": "Client for remote statistic",
+  "authors": [
+    {
+      "name": "Alex Yeropudov",
+      "email": "oleksandr.yeropudov@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "SbergradStats": "src/"
+    }
+  }
+}

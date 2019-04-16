@@ -1,0 +1,16 @@
+# Created by .ignore support plugin (hsz.mobi)
+composer.phar
+/vendor/
+composer.phar
+vendor/
+config/autoload/*.local.php
+*.mo
+data/logs/
+data/cache/
+data/sessions/
+data/tmp/
+temp/
+data/DoctrineORMModule/Proxy/
+data/DoctrineORMModule/cache/
+demos/
+extras/documentation
