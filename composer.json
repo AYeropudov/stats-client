@@ -12,8 +12,8 @@
     "php": ">=7.0.0"
   },
   "autoload": {
-    "psr-0": {
-      "SbergradStats": "src/"
+    "psr-4": {
+      "SbergradStats\\": "src/"
     }
   }
 }
