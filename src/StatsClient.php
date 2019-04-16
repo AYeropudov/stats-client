@@ -37,7 +37,7 @@ class StatsClient
             'id' => $requestId
         ];
 
-        $this->sendRequest($body);
+        return $this->sendRequest($body);
     }
 
     private function sendRequest(array $body)
