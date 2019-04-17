@@ -9,7 +9,8 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "php": ">=7.0.0"
+    "php": ">=7.0.0",
+    "php-amqplib/php-amqplib": "^2.8"
   },
   "autoload": {
     "psr-4": {

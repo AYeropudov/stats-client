@@ -6,7 +6,7 @@ namespace SbergradStats;
  * Class StatsClient
  * @package SbergradStats
  */
-class StatsClient
+class StatsClient implements IStatsClient
 {
     /** @var string  */
     private $host = 'http://localhost:5001/';
