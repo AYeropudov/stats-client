@@ -1,6 +1,5 @@
 <?php
 
-
 namespace SbergradStats;
 
 
@@ -44,7 +43,7 @@ class StatsRedisClient implements IStatsClient
             $redisClient->connect($this->host);
             $redisClient->lPush(
                 $que_name,
-                json_encode($body)
+                json_encode(['event_name' => 'statistic_rq', 'payload' => $body])
             );
         } catch (RedisException $e) {
             // we get that due to default_socket_timeout
