@@ -39,11 +39,10 @@ class StatsQueueClient implements IStatsClient
             'id' => $requestId
         ];
         $channel = $this->connection->channel();
-        $channel->queue_declare('map_test_postback', false, true, false, false);
         $channel->queue_declare('stats_queue', false, true, false, false);
 
         $msg = new AMQPMessage(json_encode($body));
-
+        $channel->basic_publish($msg, '', 'stats_queue');
         $channel->close();
         $this->connection->close();
     }
